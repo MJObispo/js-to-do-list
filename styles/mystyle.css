@@ -1,0 +1,17 @@
+body {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: rgba(218, 226, 221, 0.822);
+}
+body .title-logo {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+}
+body .title-logo img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=mystyle.css.map */
