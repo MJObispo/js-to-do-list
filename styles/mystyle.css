@@ -33,7 +33,7 @@ body .add-task {
   margin: 30px 300px;
   background-color: white;
 }
-body .add-task button {
+body button {
   background-color: rgba(50, 198, 113, 0.822);
   border-radius: 20px;
   color: white;
@@ -44,11 +44,11 @@ body .add-task button {
   cursor: pointer;
   transition-duration: 0.5s;
 }
-body .add-task button:hover {
+body button:hover {
   box-shadow: 0 12px 12px 0 rgba(0, 0, 0, 0.24), 0 17px 20px 0 rgba(0, 0, 0, 0.19);
   opacity: 1;
 }
-body .add-task input, body .add-task input:focus {
+body input, body input:focus {
   font-size: 20px;
   padding: 12px 10px;
   border: 0;
@@ -68,6 +68,10 @@ body #taskList .task {
   display: flex;
   justify-content: space-between;
   background-color: white;
+}
+body #taskList .task .task-name {
+  font-weight: 400;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=mystyle.css.map */

@@ -39,31 +39,30 @@ body {
         padding: 20px;
         margin: 30px 300px;
         background-color: white;
+    }
 
+    button {
+        background-color: $main-color;
+        border-radius: 20px;
+        color: white;
+        opacity: 0.8;
+        border: none;
+        padding: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        transition-duration: 0.5s;
+    }
 
-        button {
-            background-color: $main-color;
-            border-radius: 20px;
-            color: white;
-            opacity: 0.8;
-            border: none;
-            padding: 20px;
-            font-weight: bold;
-            cursor: pointer;
-            transition-duration: 0.5s;
-        }
+    button:hover {
+        box-shadow: 0 12px 12px 0 rgba(0,0,0,0.24), 0 17px 20px 0 rgba(0,0,0,0.19);
+        opacity: 1;
+    }
 
-        button:hover {
-            box-shadow: 0 12px 12px 0 rgba(0,0,0,0.24), 0 17px 20px 0 rgba(0,0,0,0.19);
-            opacity: 1;
-        }
-
-        input, input:focus {
-            font-size: 20px;
-            padding: 12px 10px;
-            border: 0;
-            outline: none !important;
-        }
+    input, input:focus {
+        font-size: 20px;
+        padding: 12px 10px;
+        border: 0;
+        outline: none !important;
     }
 
     #taskList {
@@ -81,6 +80,12 @@ body {
             display: flex;
             justify-content: space-between;
             background-color: white;
+
+            .task-name {
+                font-weight: 400;
+                font-size: 30px;
+            }
+
         }
 
     }
