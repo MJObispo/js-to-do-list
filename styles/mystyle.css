@@ -54,5 +54,20 @@ body .add-task input, body .add-task input:focus {
   border: 0;
   outline: none !important;
 }
+body #taskList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #taskList .task {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 75%;
+  max-width: 75%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
 
 /*# sourceMappingURL=mystyle.css.map */
