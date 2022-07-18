@@ -59,6 +59,7 @@ body {
     }
 
     input, input:focus {
+        color: $main-color;
         font-size: 30px;
         padding: 12px 20px;
         border: 0;

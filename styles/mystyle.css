@@ -49,6 +49,7 @@ body button:hover {
   opacity: 1;
 }
 body input, body input:focus {
+  color: rgba(50, 198, 113, 0.822);
   font-size: 30px;
   padding: 12px 20px;
   border: 0;
