@@ -35,6 +35,14 @@ window.addEventListener("load", ()=>{
             newTaskContainer.appendChild(newTaskButtonDiv);
 
             taskList.appendChild(newTaskContainer);
+
+            newTaskEditButton.addEventListener("click", ()=> {
+                newTaskName.textContent = prompt("Enter new task: ");
+                taskList.removeChild(newTaskContainer);
+                newTaskContainer.appendChild(newTaskName);
+                newTaskContainer.appendChild(newTaskButtonDiv);
+                taskList.appendChild(newTaskContainer);
+            });
         }
     });
 });
