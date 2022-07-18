@@ -43,6 +43,10 @@ window.addEventListener("load", ()=>{
                 newTaskContainer.appendChild(newTaskButtonDiv);
                 taskList.appendChild(newTaskContainer);
             });
+
+            newTaskDeleteButton.addEventListener("click", () => {
+                taskList.removeChild(newTaskContainer);
+            });
         }
     });
 });
