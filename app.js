@@ -27,6 +27,14 @@ window.addEventListener("load", ()=>{
             const newTaskDeleteButton = document.createElement("button");
             newTaskDeleteButton.innerText = "Delete";
             newTaskDeleteButton.type = "button";
+
+            newTaskButtonDiv.appendChild(newTaskEditButton);
+            newTaskButtonDiv.appendChild(newTaskDeleteButton);
+          
+            newTaskContainer.appendChild(newTaskName);
+            newTaskContainer.appendChild(newTaskButtonDiv);
+
+            taskList.appendChild(newTaskContainer);
         }
     });
 });
