@@ -18,15 +18,29 @@ window.addEventListener("load", ()=>{
 
             const newTaskButtonDiv = document.createElement("div");
             newTaskButtonDiv.classList.add("action-buttons");
-
+            
+            //Pencil
             const newTaskEditButton = document.createElement("button");
             newTaskEditButton.type = "button";
-            newTaskEditButton.className = "editBtn";
-            newTaskEditButton.innerText = "Edit task";
 
+            let newImgEditButton = document.createElement("img");
+            newImgEditButton.src = "assets/pencil.png";
+            newImgEditButton.height = "35";
+            newImgEditButton.width = "35";
+            newTaskEditButton.appendChild(newImgEditButton);
+            //Pencil
+
+
+            //Trash
             const newTaskDeleteButton = document.createElement("button");
-            newTaskDeleteButton.innerText = "Delete";
             newTaskDeleteButton.type = "button";
+
+            let newImgTrashButton = document.createElement("img");
+            newImgTrashButton.src = "assets/trash.png";
+            newImgTrashButton.height = "35";
+            newImgTrashButton.width = "35";
+            newTaskDeleteButton.appendChild(newImgTrashButton);
+            //Trash
 
             newTaskButtonDiv.appendChild(newTaskEditButton);
             newTaskButtonDiv.appendChild(newTaskDeleteButton);
@@ -35,6 +49,7 @@ window.addEventListener("load", ()=>{
             newTaskContainer.appendChild(newTaskButtonDiv);
 
             taskList.appendChild(newTaskContainer);
+            
 
             newTaskEditButton.addEventListener("click", ()=> {
                 newTaskName.textContent = prompt("Enter new task: ");
