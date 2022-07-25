@@ -19,29 +19,24 @@ window.addEventListener("load", ()=>{
             const newTaskButtonDiv = document.createElement("div");
             newTaskButtonDiv.classList.add("action-buttons");
             
-            //Pencil
             const newTaskEditButton = document.createElement("button");
             newTaskEditButton.type = "button";
 
             let newImgEditButton = document.createElement("img");
             newImgEditButton.src = "assets/pencil.png";
-            newImgEditButton.height = "35";
-            newImgEditButton.width = "35";
+            newImgEditButton.height = "40";
+            newImgEditButton.width = "40";
             newTaskEditButton.appendChild(newImgEditButton);
-            //Pencil
-
-
-            //Trash
+    
             const newTaskDeleteButton = document.createElement("button");
             newTaskDeleteButton.type = "button";
 
             let newImgTrashButton = document.createElement("img");
             newImgTrashButton.src = "assets/trash.png";
-            newImgTrashButton.height = "35";
-            newImgTrashButton.width = "35";
+            newImgTrashButton.height = "40";
+            newImgTrashButton.width = "40";
             newTaskDeleteButton.appendChild(newImgTrashButton);
-            //Trash
-
+            
             newTaskButtonDiv.appendChild(newTaskEditButton);
             newTaskButtonDiv.appendChild(newTaskDeleteButton);
           
