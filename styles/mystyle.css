@@ -72,6 +72,8 @@ body #taskList .task {
   background-color: white;
 }
 body #taskList .task .task-name {
+  padding: 10px;
+  padding-top: 15px;
   font-weight: 400;
   font-size: 30px;
 }
